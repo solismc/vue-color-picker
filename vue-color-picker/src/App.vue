@@ -4,22 +4,22 @@
     <HelloWorld msg="What is your favorite color?"/>
     <br>
     <section class="hsl-sliders">
-        Hue
+        Hue = {{this.hue}}
         <br>
       <input type="range" min="0" max="360" v-on:input="HueUpdated" v-model="hue"/>
       </section>
       <section>
-        Lightness
+        Lightness = {{this.lightness}}
         <br>
       <input type="range" min="0" max="100" v-on:input="LightnessUpdated" v-model="lightness"/>
       </section>
       <section>
-        Saturation
+        Saturation = {{this.saturation}}
         <br>
       <input type="range" min="0" max="100" v-on:input="SaturationUpdated" v-model="saturation"/>
       </section>
       <section>
-        Transparency
+        Transparency = {{this.transparency}}
         <br>
       <input type="range" min="0" max="100" v-on:input="TransparencyUpdated" v-model="transparency"/>
       </section>

@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
-    "start": "node server.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-color-picker/build/build.js",
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1",

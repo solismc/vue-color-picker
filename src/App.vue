@@ -90,5 +90,12 @@ export default {
   width: 100%;
   height: 10em;
   margin: 3px;
+  height: 40vh;
 }
+
+#hsl-sliders {
+  height: 3vh;
+  font-size: large;
+}
+
 </style>

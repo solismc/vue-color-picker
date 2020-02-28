@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="What is your favorite color?"/>
+    <HelloWorld class="hello" msg="What is your favorite color?"/>
     <br>
+    <section class="sliders">
     <section class="hsl-sliders">
         Hue = {{this.hue}}
         <br>
@@ -22,6 +23,7 @@
         Transparency = {{this.transparency}}
         <br>
       <input type="range" min="0" max="100" v-on:input="TransparencyUpdated" v-model="transparency"/>
+      </section>
       </section>
   <section id="color-box" :style="backgroundColor"> 
   </section>
@@ -80,7 +82,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 30px;
+  margin-top: 10vh;
 }
 
 #color-box {
@@ -90,5 +92,17 @@ export default {
   width: 100%;
   height: 10em;
   margin: 3px;
+  height: 35vh;
 }
+
+#hello {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#sliders {
+  font-size: x-large;
+  height: 30vh;
+}
+
 </style>
